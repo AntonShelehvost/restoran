@@ -1,0 +1,128 @@
+.heapBox {
+    clear: both;
+    display: inline-block;
+    position: relative;
+}
+
+.heapBox * {
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: none;
+}
+
+.heapBox a:hover {
+    border-bottom: 1px solid #c49e60;
+}
+
+.heapBox.disabled .holder {
+    color: #989898;
+}
+
+.heapBox.disabled .handler {
+    background: url(../img/heapbox_bg.jpg) repeat-x;
+}
+
+.heapBox a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.heapBox .holder {
+    padding: 0 4px !important;
+    overflow: hidden;
+    border: 1px solid #c49e60;
+    border-right: none;
+    font-family: 'Calibri';
+    background-color: #1a1a1d;
+    color: #fff;
+}
+
+.heapBox .handler {
+    background-color: #1a1a1d;
+    border: 1px solid #c49e60;
+    border-left: none;
+    padding: 0 5px 0 0 !important;
+}
+
+.heapBox .holder, .heapBox .handler {
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+.heapBox div.heap {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    left: 0;
+    width: 100%;
+    top: 27px;
+    overflow: hidden;
+    border-top: none;
+    /* border: 1px solid #c49e60; */
+}
+
+.heapBox .heap .heapOptions {
+    display: block;
+    overflow: hidden;
+    z-index: 20;
+    position: relative;
+}
+
+.heapBox .heap a.sliderUp {
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: #333 url(../img/slider_arrow_up.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom: 1px solid #111;
+    position: absolute;
+    top: 0px;
+    z-index: 30;
+}
+
+.heapBox .heap a.sliderDown {
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: #333 url(../img/slider_arrow_down.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top: 1px solid #111;
+    position: absolute;
+    bottom: 0px;
+    z-index: 30;
+}
+
+.heapBox .heap .heapOptions .heapOption {
+    z-index: 20;
+    position: relative;
+    display: block;
+}
+
+.heapBox .heap .heapOptions .heapOption a {
+    width: 100%;
+    display: block;
+    background-color: #1a1a1d;
+    text-align: center;
+    border-bottom: none;
+}
+
+.heapBox .heap .heapOptions .heapOption a:hover {
+    border-bottom: none;
+    background-color: #c49e60;
+}
+
+.heapBox .heap .heapOptions .heapOption a.selected {
+
+}
+
+.heapBox .heap .heapOptions .heapOption a.disabled {
+    color: #777;
+}
+
+.heapBox .heap .heapOptions .heapOption a.disabled:hover {
+    background: url(../img/heapbox_heapitem_bg.jpg) repeat-x;
+}
